@@ -1,5 +1,5 @@
 
-$("#burger").on("mouseleave",function(){
+$("#burger-container").on("mouseleave",function(){
     console.log("mouse leave");
     lineToLine.reverse();
 });
