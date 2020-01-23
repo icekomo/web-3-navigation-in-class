@@ -1,5 +1,8 @@
 
 $("#burger-container").on("mouseleave",function(){
     console.log("mouse leave");
-    lineToLine.reverse();
+    if(canYouSeeNav === false){
+        // play the timeline to combine the lines into 1 line
+        lineToLine.reverse();
+    }
 });
