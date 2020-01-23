@@ -15,5 +15,10 @@ header{
         display: flex;
         justify-content: flex-end;
 
+        svg{
+            height: 44px;
+            cursor: pointer;
+        }
+
     }
 }
