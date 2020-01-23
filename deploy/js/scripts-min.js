@@ -1,1 +1,1 @@
-gsap.set("#outline",{alpha:0}),$(document).ready((function(){}));
+gsap.set("#outline",{alpha:0}),gsap.set(".burger-lines",{transformOrigin:"50% 50%"}),$("#burger").on("mouseenter",(function(){console.log("mouse enter")})),$(document).ready((function(){}));
