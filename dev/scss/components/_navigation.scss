@@ -1,3 +1,38 @@
 /* =============
     Navigation
 ============= */
+nav{
+    position: fixed;
+    top:0;
+    right:0;
+    z-index: 15;
+    width: 80vw;
+    height: 100vh;
+    background-color: $white;
+    @include md{
+        width: 50vw;
+    }
+
+    @include lg{
+        width: 40vw;
+    }
+
+    @include xl{
+        width: 30vw;
+    }
+    ul{
+        padding: 100px 0 0 20px;
+        li{
+            margin-bottom: 20px;
+            a:link, a:visited{
+                color: $black;
+                text-decoration: none;
+                transition: 0.25s;
+                font-size: rem-calc(40);
+            }
+            a:hover, a:active{
+                color: $rust;
+            }
+        }
+    }
+}
