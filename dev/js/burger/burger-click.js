@@ -9,11 +9,18 @@ $("#burger-container").on("click", function(){
     if(canYouSeeNav === false){
         gsap.set("#outline",{alpha:1});
         lineToX.play();
-        gsap.to("#nav-bg",{duration:0.5, scale:100});
+        // grow background
+        gsap.to("#nav-bg",{duration:0.5, scale:100, alpha:0.85});
+        // set nav position to flex
+        gsap.set("nav",{display:"flex"});
+        gsap.from("nav li",{duration:0.5, alpha:0, stagger:0.15, delay:0.25, y:50});
+
         canYouSeeNav = true;
     }else{
         lineToX.reverse();
-        gsap.to("#nav-bg",{duration:0.5, scale:1});
+        // shrink background
+        gsap.to("#nav-bg",{duration:0.25, scale:1});
+        gsap.to("nav li",{duration:0.25, alpha:0, onComplete:hideNav});
         canYouSeeNav = false;
     }
 });
