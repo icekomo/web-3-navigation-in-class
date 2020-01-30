@@ -9,6 +9,7 @@ header{
     grid-template-columns: 20px auto 20px;
     grid-template-areas: ". header .";
     padding: 10px 0;
+    z-index: 20;
 
     >div{
         grid-area: header;
