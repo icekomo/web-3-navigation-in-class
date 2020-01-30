@@ -4,20 +4,23 @@
 nav{
     position: fixed;
     top:0;
-    right:0;
+    right:-80vw;
     z-index: 15;
     width: 80vw;
     height: 100vh;
     background-color: $white;
     @include md{
+        right:-50vw;
         width: 50vw;
     }
 
     @include lg{
+        right:-40vw;
         width: 40vw;
     }
 
     @include xl{
+        right:-30vw;
         width: 30vw;
     }
     ul{

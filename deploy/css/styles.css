@@ -373,19 +373,22 @@ textarea {
 nav {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -80vw;
   z-index: 15;
   width: 80vw;
   height: 100vh;
   background-color: #fff; }
   @media (min-width: 768px) {
     nav {
+      right: -50vw;
       width: 50vw; } }
   @media (min-width: 992px) {
     nav {
+      right: -40vw;
       width: 40vw; } }
   @media (min-width: 1200px) {
     nav {
+      right: -30vw;
       width: 30vw; } }
   nav ul {
     padding: 100px 0 0 20px; }
