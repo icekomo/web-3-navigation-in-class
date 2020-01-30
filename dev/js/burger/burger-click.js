@@ -9,9 +9,11 @@ $("#burger-container").on("click", function(){
     if(canYouSeeNav === false){
         gsap.set("#outline",{alpha:1});
         lineToX.play();
+        gsap.to("#nav-bg",{duration:0.5, scale:100});
         canYouSeeNav = true;
     }else{
         lineToX.reverse();
+        gsap.to("#nav-bg",{duration:0.5, scale:1});
         canYouSeeNav = false;
     }
 });
