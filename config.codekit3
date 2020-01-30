@@ -292,6 +292,14 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/dev/navigation.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/navigation.html",
+		"oF": 0
+		},
 	"/dev/scss/base/_base.scss": {
 		"aP": 0,
 		"bl": 0,
